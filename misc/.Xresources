@@ -38,7 +38,8 @@ xterm*ScrollBar: false
 xterm*boldMode: false
 xterm*utf8: 1
 xterm*selectToClipboard: true
-xterm*cursorBlink: true
+xterm.termName: xterm-256color
+xterm*cursorBlink: false
 
 !! backspace/delete fixes 
 *VT100.Translations: #override \
