@@ -11,6 +11,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'ingydotnet/yaml-vim'
 call plug#end()
 
 " relative line number with current line
@@ -19,6 +20,11 @@ set numberwidth=3
 
 "normal ctrl+c/ctrl+v 
 set clipboard=unnamedplus
+
+"indentation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 "theme
 syntax enable
