@@ -19,3 +19,6 @@ alias v='vim'
 alias vi='vim'
 alias vim='vim'
 alias nano='vim'
+
+# tmux init
+source ~/Scripts/tmux-init.sh
