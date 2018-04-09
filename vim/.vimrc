@@ -38,7 +38,6 @@ let g:ale_sign_warning = '.'
 let g:syntastic_javascript_checkers = ['eslint']
 
 "NERDtree config
-autocmd vimenter * NERDTree " open automatically
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " closes vim if only NERDtree open
 map <C-b> :NERDTreeToggle<CR>
 
