@@ -5,19 +5,14 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# auto "cd" when entering a path
-shopt -s autocd
-
-# increase rate
-xset r rate 200 50
-
-# vim alias
+# Editor aliasing and config
 alias v='vim'
 alias vi='vim'
 alias vim='vim'
 alias nano='vim'
+export EDITOR=vim
 
-# get current branch in git repo
+# Get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 	if [ ! "${BRANCH}" == "" ]
@@ -29,7 +24,7 @@ function parse_git_branch() {
 	fi
 }
 
-# get current status of git repo
+# Get current status of git repo
 function parse_git_dirty {
 	status=`git status 2>&1 | tee`
 	dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
@@ -65,3 +60,10 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]\W\[\e[m\] \\$ \[\e[34m\]\`parse_git_branch\`\[\e[m\] "
+
+
+# Specific stuff for my laptop
+[ -f ~/.alcipir.bash ] && source ~/.alcipir.bash
+
+# Loads Fuzzy Finder
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
