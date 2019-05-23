@@ -1,4 +1,2 @@
-#!bin/bash
+#!/bin/sh
 stow bash
-stow vim
-stow tmux
