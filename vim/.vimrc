@@ -9,6 +9,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'sheerun/vim-polyglot'
     Plug 'OmniSharp/omnisharp-vim'
     Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 set nocompatible
