@@ -1,0 +1,53 @@
+#+TITLE: Al-Cipir's Emacs Configuration Document
+#+AUTHOR: Al-Cipir
+#+EMAIL: andre@cabrera.pw
+#+PROPERTY: header-args :tangle init.el
+* Bootstrap
+#+BEGIN_SRC emacs-lisp 
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
+(straight-use-package 'use-package)
+(require 'package)
+#+END_SRC
+* Install Packages
+#+BEGIN_SRC emacs-lisp
+(use-package csharp-mode
+:straight t)
+#+END_SRC
+* User Interface
+** De-bloat Emacs UI
+#+BEGIN_SRC emacs-lisp
+(blink-cursor-mode 0)
+(setq initial-scratch-message "")
+(setq inhibit-startup-message t)
+(setq visible-bell t)
+(toggle-frame-maximized)
+(scroll-bar-mode 0)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+#+END_SRC
+** Set FixedSys as default font 
+#+BEGIN_SRC emacs-lisp
+(set-face-attribute 'default nil
+                    :family "Fixedsys Excelsior"
+                    :height 140
+                    :weight 'normal
+                    :width 'expanded)
+#+END_SRC
+** Turn off the lights
+#+BEGIN_SRC emacs-lisp
+(custom-set-faces
+  '(default ((t (:background "black" :foreground "grey"))))
+  '(fringe ((t (:background "black")))))
+#+END_SRC

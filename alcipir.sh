@@ -5,4 +5,4 @@ ln -sfv $(pwd)/vim/.vimrc ~/.vimrc
 ln -sfv $(pwd)/misc/.screenrc ~/.screenrc
 ln -sfv $(pwd)/misc/.alacritty.yml ~/.alacritty.yml
 ln -sfv $(pwd)/.config/alacritty/ ~/.config/alacritty
-
+ln -sfv $(pwd)/misc/.emacs.d/emacs.org ~/.emacs.d/emacs.org
