@@ -40,7 +40,6 @@ set showcmd
 set lazyredraw
 set nowritebackup
 
-hi CursorLine term=bold cterm=bold
 filetype plugin indent on
 syntax on
 
