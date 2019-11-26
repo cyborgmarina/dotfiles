@@ -60,7 +60,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Windowed
+  startup_mode: Maximized
 
   # Window title
   #title: Alacritty
@@ -170,34 +170,34 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Seagull)
+# Colors (Monokai Dark)
 colors:
   # Default colors
   primary:
-    background: '0xffffff'
-    foreground: '0x61707a'
+    background: '0x272822'
+    foreground: '0xF8F8F2'
 
   # Normal colors
   normal:
-    black:   '0x0b141a'
-    red:     '0xff4053'
-    green:   '0x11ab00'
-    yellow:  '0xbf8c00'
-    blue:    '0x0099ff'
-    magenta: '0x9854ff'
-    cyan:    '0x00a5ab'
-    white:   '0xffffff'
+   black:   '0x272822'
+   red:     '0xF92672'
+   green:   '0xA6E22E'
+   yellow:  '0xF4BF75'
+   blue:    '0x66D9EF'
+   magenta: '0xAE81FF'
+   cyan:    '0xA1EFE4'
+   white:   '0xF8F8F2'
 
   # Bright colors
   bright:
-    black:   '0x0b141a'
-    red:     '0xff4053'
-    green:   '0x11ab00'
-    yellow:  '0xbf8c00'
-    blue:    '0x0099ff'
-    magenta: '0x9854ff'
-    cyan:    '0x00a5ab'
-    white:   '0xffffff'
+   black:   '0x75715E'
+   red:     '0xF92672'
+   green:   '0xA6E22E'
+   yellow:  '0xF4BF75'
+   blue:    '0x66D9EF'
+   magenta: '0xAE81FF'
+   cyan:    '0xA1EFE4'
+   white:   '0xF9F8F5'
 
 # Visual Bell
 #

@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'godlygeek/tabular'
     Plug 'plasticboy/vim-markdown'
+    Plug 'crusoexia/vim-monokai'
 call plug#end()
 
 set nocompatible
@@ -39,6 +40,7 @@ set showmode
 set showcmd 
 set lazyredraw
 set nowritebackup
+colorscheme monokai
 
 filetype plugin indent on
 syntax on
