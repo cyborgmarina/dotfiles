@@ -48,3 +48,5 @@ syntax on
 let g:OmniSharp_server_stdio = 1
 " Make Fuzzy Finding ignore .gitignore files (thanks @tpope)
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" Remap <Esc> to exit terminal
+:tnoremap <Esc> <C-\><C-n>
