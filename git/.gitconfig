@@ -1,0 +1,14 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[core]
+    editor = codium --wait
+[apply]
+    whitespace = nowarn
+[format]
+    pretty = %C(yellow)%H%Creset %s %C(red)(%an, %cr)%Creset
+[i18n]
+    filesEncoding = utf-8
+    commitencoding = utf-8
+    logoutputencoding = utf-8
