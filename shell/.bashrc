@@ -6,7 +6,6 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Source dotfiles
-for DOTFILE in `find $HOME/.shell`
-do
-  [ -f “$DOTFILE” ] && source “$DOTFILE”
-done
+source $HOME/.shell/.prompt
+source $HOME/.shell/.env
+source $HOME/.shell/.alias
