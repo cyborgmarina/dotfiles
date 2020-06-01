@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Zenburn",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#0000"
+      },
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true, 
+    "editor.folding": false,
+    "editor.occurrencesHighlight": false,
+    "editor.fontFamily": "'Bitstream Vera Sans Mono', 'monospace', monospace",
+    "editor.fontSize": 14,
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "wordWrapColumn",
+    "explorer.openEditors.visible": 0, 
+    "window.menuBarVisibility": "toggle"
+}
