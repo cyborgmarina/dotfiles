@@ -12,3 +12,6 @@
     filesEncoding = utf-8
     commitencoding = utf-8
     logoutputencoding = utf-8
+[user]
+	name = Andre Cabrera
+	email = andrecabrera@protonmail.ch

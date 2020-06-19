@@ -1,5 +1,5 @@
 #!/bin/sh
-ln -sfv $(pwd)/codium/settings.json $HOME/.config/VSCodium/User/settings.json
+ln -sfv $(pwd)/code/settings.json $HOME/.config/Code/User/settings.json
 ln -sfv $(pwd)/shell/.bashrc $HOME/.bashrc
 mkdir -p $HOME/.shell
 ln -sfv $(pwd)/shell/.alias $HOME/.shell/.alias
