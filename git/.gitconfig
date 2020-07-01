@@ -3,7 +3,7 @@
     status = auto
     branch = auto
 [core]
-    editor = codium --wait
+    editor = vim
 [apply]
     whitespace = nowarn
 [format]
