@@ -1,5 +1,6 @@
 #!/bin/sh
 ln -sfv $(pwd)/shell/.bashrc $HOME/.bashrc
+ln -sfv $(pwd)/vim/.vimrc $HOME/.vimrc
 ln -sfv $(pwd)/shell/.Xresources $HOME/.Xresources
 mkdir -p $HOME/.shell
 ln -sfv $(pwd)/shell/.alias $HOME/.shell/.alias
