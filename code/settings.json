@@ -7,7 +7,7 @@
   "editor.fontFamily": "Hack",
   "editor.fontSize": 12,
   "editor.renderIndentGuides": false,
-  "editor.cursorStyle": "line",
+  "editor.cursorStyle": "block",
   "editor.cursorBlinking": "solid",
   "editor.snippetSuggestions": "top",
   "javascript.updateImportsOnFileMove.enabled": "always",
