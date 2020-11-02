@@ -1,3 +1,24 @@
 {
-  "telemetry.enableTelemetry": false
+  "telemetry.enableTelemetry": false,
+  "breadcrumbs.enabled": false,
+  "cmake.configureOnOpen": true,
+  "editor.overviewRulerBorder": false,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Hack",
+  "editor.fontSize": 12,
+  "editor.renderIndentGuides": false,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "solid",
+  "editor.snippetSuggestions": "top",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": -1,
+  "window.menuBarVisibility": "toggle",
+  "workbench.colorTheme": "Subliminal",
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "eq-material-theme-icons-ocean"
 }
