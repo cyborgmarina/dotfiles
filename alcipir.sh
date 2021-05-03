@@ -1,5 +1,7 @@
 #!/bin/sh
-ln -sfv $(pwd)/shell/.bashrc $HOME/.bashrc
+
+#TODO: add prompt to ask if should replace current bashrc/zshrc 
+#ln -sfv $(pwd)/shell/.bashrc $HOME/.bashrc
 ln -sfv $(pwd)/vim/.vimrc $HOME/.vimrc
 ln -sfv $(pwd)/shell/.Xresources $HOME/.Xresources
 mkdir -p $HOME/.shell
