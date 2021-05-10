@@ -21,3 +21,17 @@ nnoremap <C-a> :!pandoc % --pdf-engine=xelatex -o %.pdf<CR>
 
 "Move backups to another folder to not pollute git repos 
 set dir="~/.vimswp" 
+
+"CtrlP 
+"Excluding common directories
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*        " Linux/MacOSX
+set wildignore+=*/node_modules/*
+
+"Enable relative numbers
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
+
+"Set <tab> to 4 spaces
+set expandtab
+set tabstop=4
+
