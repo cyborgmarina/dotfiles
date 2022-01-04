@@ -1,0 +1,19 @@
+{
+    "editor.lineHeight": 25,
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.lineNumbers": "off",
+    "editor.wordWrap": "on",
+    "editor.renderLineHighlight": "none",
+    "editor.guides.indentation": false,
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.editor.showTabs": false,
+    "breadcrumbs.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.nativeTabs": true,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.sideBar.location": "right"
+}
