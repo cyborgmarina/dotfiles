@@ -3,7 +3,7 @@
     status = auto
     branch = auto
 [core]
-    editor = vim
+    editor = code
 [apply]
     whitespace = nowarn
 [format]
