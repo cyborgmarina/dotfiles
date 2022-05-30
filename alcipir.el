@@ -13,7 +13,12 @@
 (defun alcipir/configure-user-interface ()
   "Configure user interface."
   (alcipir/configure-font "Courier Prime-14")
-  (alcipir/custom-interface-mode 1))
+  (alcipir/custom-interface-mode 1)
+  (use-package vscode-dark-plus-theme
+    :ensure t
+    :config
+    (load-theme 'vscode-dark-plus t)))
+
 
 (defun alcipir/configure-user-experience ()
   "Configure user experience such as chords, keybindings and special modes."
@@ -29,6 +34,10 @@
   (global-set-key (kbd "C-t") (lambda nil (interactive) (ansi-term "/bin/bash")))
   (global-set-key (kbd "C-x C-r") (lambda nil (interactive) (dired "~/Repos")))
   (global-prettify-symbols-mode +1)
+  (setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'meta
+      mac-option-modifier 'none)
   (use-package undo-tree
     :bind (("C-z" . undo-tree-undo)
 	   ("C-x C-z" . undo-tree-undo))
@@ -72,7 +81,6 @@
 
 (defun alcipir/configure-programming-languages ()
   "General and specific configuration for programming languages."
-  (use-package format-all)
   (use-package markdown-mode
     :config
     (add-to-list 'auto-mode-alist
@@ -110,6 +118,7 @@
 	      (lambda () (dired-hide-details-mode)))
     (if (not alcipir/custom-interface-mode)
 	(set-fringe-style nil)
+      (toggle-frame-maximized)
       (set-fringe-mode 25))))
 
 (defun alcipir/init ()
