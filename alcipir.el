@@ -72,7 +72,6 @@
 
 (defun alcipir/configure-programming-languages ()
   "General and specific configuration for programming languages."
-  (alcipir/configure-emacs-lisp)
   (use-package format-all)
   (use-package markdown-mode
     :config
