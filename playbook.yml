@@ -1,0 +1,10 @@
+- name: Set up alkipir's developer environment
+  hosts: all
+  become: yes
+  roles:
+    - role: system-packages
+      tags:
+        - system-packages
+    - role: docker
+      tags:
+        - docker

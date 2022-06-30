@@ -1,0 +1,9 @@
+package_upgrade: yes
+packages:
+  - build-essential
+  - curl
+  - docker-compose
+  - docker.io
+  - jq
+  - make
+  - wget
