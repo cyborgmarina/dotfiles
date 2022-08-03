@@ -18,6 +18,7 @@ return require('packer').startup(function()
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
+  use 'tpope/vim-unimpaired'
   use { 'neoclide/coc.nvim', branch = 'release' }
   use { 'junegunn/fzf', run = './install --bin', }
   use { 'ibhagwan/fzf-lua', requires = { 'kyazdani42/nvim-web-devicons' } }
